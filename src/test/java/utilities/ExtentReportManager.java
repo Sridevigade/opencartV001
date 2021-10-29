@@ -47,7 +47,7 @@ public class ExtentReportManager implements ITestListener
 		extent.setSystemInfo("Operating System", System.getProperty("os.name"));
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));
 		extent.setSystemInfo("Environemnt","QA");
-		extent.setSystemInfo("Tester name","pavan");
+		extent.setSystemInfo("Tester name","Sridevi");
 	}
 	
 		
@@ -67,8 +67,8 @@ public class ExtentReportManager implements ITestListener
 		{
 			//String screenshotPath=System.getProperty("user.dir")+"\\screenshots\\"+result.getName()+".png";
 			////file:///C:/Users/sridevigade/eclipse-workspace/opencartV001
-			String screenshotPath=System.getProperty("user.dir")+"\\screenshots\\"+result.getName()+".png";
-			//String screenshotPath="file:///C:/Users/sridevigade/eclipse-workspace/opencartV001/screenshots/"+result.getName()+".png";
+			//String screenshotPath=System.getProperty("user.dir")+"\\screenshots\\"+result.getName()+".png";
+			String screenshotPath="file:///C:/Users/sridevigade/eclipse-workspace/opencartV001/screenshots/"+result.getName()+".png";
 			test.addScreenCaptureFromPath(screenshotPath);
 		}
 		catch(Exception e)

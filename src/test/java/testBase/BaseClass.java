@@ -88,9 +88,9 @@ public class BaseClass {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		//file:///C:/Users/sridevigade/eclipse-workspace/opencartV001
-		//File target = new File( "//file:///C:/Users/sridevigade/eclipse-workspace/opencartV001/screenshots/" + tname + ".png");
+		File target = new File( "//file:///C:/Users/sridevigade/eclipse-workspace/opencartV001/screenshots/" + tname + ".png");
 
-		File target = new File(System.getProperty("user.dir") + "\\screenshots\\" + tname + ".png");
+		//File target = new File(System.getProperty("user.dir") + "\\screenshots\\" + tname + ".png");
 		FileUtils.copyFile(source, target);
 	}
 	
